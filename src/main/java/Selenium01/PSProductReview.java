@@ -3,6 +3,7 @@ package Selenium01;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -36,5 +37,13 @@ public class PSProductReview {
         //WebElement loginButton = (new WebDriverWait(webDriver, 60)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Log in')]")));
 
     }
+
+
+    @AfterClass(alwaysRun = true)
+    public static void closeBrowser() {
+        if (webDriver != null)
+            webDriver.quit();
+    }
+
 
 }
