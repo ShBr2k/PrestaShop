@@ -1,2 +1,9 @@
 2019.10.31
 Added module Reviews.
+
+2019.11.03
+Added new instance of PrestaShop Site. Version is 1.7.0.5
+URL: http://18.184.129.66/prestashop1705
+Current IP address is dynamic and can be changed.
+Added module: Save for Later - Free Version.
+Added module: Product Comments.
