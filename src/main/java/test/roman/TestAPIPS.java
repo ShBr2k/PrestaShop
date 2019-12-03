@@ -17,6 +17,7 @@ public class TestAPIPS {
 
     String PSUrl = EnviromentHelper.getPrestaUrl();
     String PSKey = EnviromentHelper.getPrestaKey();
+    
     //private static final String PSUrl = "";
     //private static final String PSKey = "";
     private static final String xmlCorrectCust = "./src/main/java/test/roman/correctCust.xml";
