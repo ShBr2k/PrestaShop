@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="3">
+
+    <!--Maksym's tests--><!--
+    <test verbose="3" name="Verify that immediately after new user creation, User's name is shown in the header">
+        <classes>
+            <class name="main.java.test.maksym.TestUserNameIsShownInHeaderAfterAccountCreation"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Verify that all User details were correctly saved after account creation">
+        <classes>
+            <class name="main.java.test.maksym.TestUserDataIsCorrectAfterAccountCreation"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Verify that user may login after account creation">
+        <classes>
+            <class name="main.java.test.maksym.TestUserMayLogInAfterAccountCreation"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Verify that new account can not be created for existing user">
+        <classes>
+            <class name="main.java.test.maksym.TestNoNewAccountForExistingUser"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Account could be created without setting User's birthday">
+        <classes>
+            <class name="main.java.test.maksym.TestCreateAccountWithoutBirthday"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="API request to get details of User Maria Kvitka">
+        <classes>
+            <class name="main.java.test.maksym.TestAPIGetUserMariaApiStatus"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Create new user and API verification Test">
+        <classes>
+            <class name="main.java.test.maksym.TestAPICreateNewUserViaGUIApiVerification"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="Create new user via API">
+        <classes>
+            <class name="main.java.test.maksym.TestAPICreateNewUserViaAPIAndGUIVerification"></class>
+        </classes>
+    </test>-->
+
+    <!--Oleg's tests--><!--
+    <test verbose="3" name="testLoginForm">
+        <classes>
+            <class name="main.java.test.oleg.TestLoginForm"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestForgotLogin">
+        <classes>
+            <class name="main.java.test.oleg.TestForgotLogin"></class>
+        </classes>
+    </test>
+    <test name="Test negative data in login form">
+        <classes>
+            <class name="main.java.test.oleg.TestNegativeLoginForm"></class>
+        </classes>
+    </test>-->
+
+    <!-- Nata's tests --><!--
+    <test verbose="3" name="ChangeCurrencyForEURFromCartTest">
+        <classes>
+            <class name="main.java.test.nata.ChangeCurrencyForEURFromCartTest"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="ChangeLanguageTest">
+        <classes>
+            <class name="main.java.test.nata.ChangeLanguageTest"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="ContactUsTest">
+        <classes>
+            <class name="main.java.test.nata.ContactUsTest"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="VerifyLogoButtonTest">
+        <classes>
+            <class name="main.java.test.nata.VerifyLogoButtonTest"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="API test">
+        <classes>
+            <class name="main.java.test.nata.TestApi"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="SignInHeaderFullTest">
+        <classes>
+            <class name="main.java.test.nata.SignInHeaderFullTest"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="ChangeCurrencyAfterChangingLanguageTest">
+        <classes>
+            <class name="main.java.test.nata.ChangeCurrencyAfterChangingLanguageTest"></class>
+        </classes>
+    </test>-->
+
+    <!--Artem's tests--><!--
+    <test verbose="3" name="TestCartSmoke">
+        <classes>
+            <class name="main.java.test.artem.TestCartSmoke"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartSmokeLogged">
+        <classes>
+            <class name="main.java.test.artem.TestCartSmokeLogged"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartTotalPrice">
+        <classes>
+            <class name="main.java.test.artem.TestTotalPrice"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartTotalPriceLogged">
+        <classes>
+            <class name="main.java.test.artem.TestTotalPriceLogged"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartZeroValue">
+        <classes>
+            <class name="main.java.test.artem.TestCartZeroValue"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartOverLimit">
+        <classes>
+            <class name="main.java.test.artem.TestOverLimitValue"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="TestCartBV">
+        <classes>
+            <class name="main.java.test.artem.TestBoundaryValue"></class>
+        </classes>
+    </test>
+    <test verbose="3" name="APItest">
+        <classes>
+            <class name="main.java.test.artem.ArtemAPITest"></class>
+        </classes>
+    </test>-->
+
+    <!-- Volodya's tests--><!--
+    <test name="Create new address">
+        <classes>
+            <class name="main.java.test.volodya.CreateAddress"></class>
+        </classes>
+    </test>
+    <test name="Verify that new address alias match expected">
+        <classes>
+            <class name="main.java.test.volodya.CreateAddressVerifyExpected"></class>
+        </classes>
+    </test>
+    <test name="Verify that address body match expected">
+        <classes>
+            <class name="main.java.test.volodya.VerifyAddressData"></class>
+        </classes>
+    </test>
+    <test name="Edit address entry">
+        <classes>
+            <class name="main.java.test.volodya.EditAddress"></class>
+        </classes>
+    </test>
+    <test name="Delete address entry">
+        <classes>
+            <class name="main.java.test.volodya.DeleteAddress"></class>
+        </classes>
+    </test>
+    <test name="Create two addresses entries">
+        <classes>
+            <class name="main.java.test.volodya.Create2Addresses"></class>
+        </classes>
+    </test>
+    <test name="Verify API Addresses URL status code">
+        <classes>
+            <class name="main.java.test.volodya.APItestGETStatusCode"></class>
+        </classes>
+    </test>
+    <test name="Verify API Addresses body contain expected sub-string">
+        <classes>
+            <class name="main.java.test.volodya.APItestGETaddressesJSON"></class>
+        </classes>
+    </test>-->
+
+    <!-- Oleg Kmet test --><!--
+    <test name="Test search field">
+        <classes>
+            <class name="main.java.test.ok.TestSearchField"></class>
+        </classes>
+    </test>
+    <test name="Test category navigation">
+        <classes>
+            <class name="main.java.test.ok.TestCategoryNavigation"></class>
+        </classes>
+    </test>
+    <test name="Test sort type">
+        <classes>
+            <class name="main.java.test.ok.TestSortType"></class>
+        </classes>
+    </test>-->
+
+    <!-- Roman's test -->
+    <test name="Create new ProductReview">
+        <classes>
+            <class name="main.java.test.roman.TestAddReview"></class>
+        </classes>
+    </test>
+    <test name="Update existing ProductReview">
+        <classes>
+            <class name="main.java.test.roman.TestEditReview"></class>
+        </classes>
+    </test>
+    <test name="Delete existing ProductReview">
+        <classes>
+            <class name="main.java.test.roman.TestDeleteReview"></class>
+        </classes>
+    </test>
+    <test name="Test API. Verify adding Customers with correct and wrong values.">
+        <classes>
+            <class name="main.java.test.roman.TestAPIPS"></class>
+        </classes>
+    </test>
+
+</suite>
