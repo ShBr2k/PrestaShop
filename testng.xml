@@ -199,7 +199,7 @@
         </classes>
     </test>-->
 
-    <!-- Roman's test --><!--
+    <!-- Roman's test -->
     <test name="Create new ProductReview">
         <classes>
             <class name="main.java.test.roman.TestAddReview"></class>
@@ -214,7 +214,7 @@
         <classes>
             <class name="main.java.test.roman.TestDeleteReview"></class>
         </classes>
-    </test>-->
+    </test>
     <test name="Test API. Verify adding Customers with correct and wrong values.">
         <classes>
             <class name="main.java.test.roman.TestAPIPS"></class>
