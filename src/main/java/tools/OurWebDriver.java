@@ -16,7 +16,11 @@ public class OurWebDriver {
         if ((System.getProperty("os.name")).contains("Mac OS") || (System.getProperty("os.name")).contains("Linux")) {
             System.setProperty("webdriver.chrome.driver", EnviromentHelper.getMacDriver());
         } else {
+            //
             System.setProperty("webdriver.chrome.driver", EnviromentHelper.getWinDriver());
+            //
+            //System.setProperty("webdriver.chrome.driver", "c:\\webdriver\\chromedriver.exe");
+            //
         }
 
         if ((System.getProperty("os.name")).contains("Linux")) {
@@ -29,7 +33,14 @@ public class OurWebDriver {
         
         driver.manage().window().maximize(); // Maximize test browser window
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get(EnviromentHelper.getPrestaUrl()); // GoTo startURL
+        //
+        //driver.get(EnviromentHelper.getPrestaUrl()); // GoTo startURL
+        //
+        wait = new WebDriverWait(driver, 5);
+    }
+
+    public static void openDS() {
+        driver.get("https://ds.first-egg-bank.com/");
         wait = new WebDriverWait(driver, 5);
     }
 
